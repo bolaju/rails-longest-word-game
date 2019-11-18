@@ -1,0 +1,8 @@
+<p><%= @exist_message %></p>
+<p><%= @invalid_message %></p>
+<% if @exist_message || @invalid_message %>
+  <% score = 0 %>
+<% else %>
+  <% score = @score %>
+<% end %>
+<p>score: <%= score %></p>
